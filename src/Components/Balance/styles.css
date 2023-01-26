@@ -1,0 +1,18 @@
+#balanceSection{  
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 25px;
+    gap: 15px;  
+    border: 1px solid var(--grey2);
+    border-radius: 4px;
+}
+
+#balanceTotalBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+#balanceValue{
+    color: var(--primary);
+}

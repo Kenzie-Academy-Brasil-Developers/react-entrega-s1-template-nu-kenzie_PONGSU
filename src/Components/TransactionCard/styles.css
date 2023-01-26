@@ -1,0 +1,73 @@
+.inputValueCard{
+    background-color: #f3f3f398;
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+.cardInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.cardInfo h3{
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.cardInfo h4, .cardInfo h5{
+    color: var(--grey3);
+}
+
+.Entrada{
+    background-color: var(--secondary);
+    width: 7.3px;    
+    border-radius: 4px 0 0 4px;
+}
+
+.Saída{
+    background-color: var(--grey3);
+    width: 7.3px;
+    border-radius: 4px 0 0 4px;
+}
+
+.cardFirstSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardSecondSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.removeButton{
+    height: 28px;
+    width: 28px;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.removeButton:hover{
+    filter: brightness(0.8);
+}
+
+
+@media(min-width:950px) {
+    .cardInfo{
+        flex-direction: row;
+        padding: 7px 13px ;
+    }
+    .cardSecondSection{
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+    }    
+}

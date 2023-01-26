@@ -1,0 +1,82 @@
+.headerButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+
+    width: 64px;
+    height: 40px;
+
+    background: var(--grey2);
+    border: 1.4px solid var(--grey2);
+    border-radius: 8px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--grey4);
+    cursor: pointer;
+}
+
+.headerButton:hover{
+    filter: brightness(0.8);
+}
+
+.homePageButton{
+    color: var(--grey1);
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 13px 20px;
+    gap: 10px;    
+    width: 100%;
+    max-width: 350px;
+    height: 48px;
+    cursor: pointer;    
+    
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 8px;    
+}
+
+.homePageButton:hover{
+    filter: brightness(0.8);
+}
+
+.formButton{
+    color: var(--grey1);
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 13px 20px;
+    gap: 10px;    
+    width: 100%;
+    height: 48px;
+    cursor: pointer;    
+    
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 8px;    
+}
+
+.formButton:hover{
+    filter: brightness(1.2);
+}
