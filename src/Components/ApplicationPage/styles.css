@@ -48,11 +48,13 @@ header {
 @media(min-width:950px) {
     #appPageMain{
         display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
     form{
         width: 400px;
     }
     #financialResum{
-        width: 100%;
+        padding-top: 0;
     }
 }
