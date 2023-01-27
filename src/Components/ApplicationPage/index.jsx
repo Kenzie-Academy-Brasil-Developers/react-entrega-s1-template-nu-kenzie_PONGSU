@@ -4,7 +4,7 @@ import { Balance } from '../Balance'
 import { Form } from '../Form'
 import { Header } from '../Header'
 import { TransactionsList } from '../TransactionsList'
-import "./styles.css";
+import './styles.css';
 
 export const ApplicationPage =  ( {setHomePage, listTransactions, setListTransactions} ) => {
     const balance = listTransactions.reduce((valorAnterior, valorAtual) => {
@@ -17,11 +17,11 @@ export const ApplicationPage =  ( {setHomePage, listTransactions, setListTransac
         <section id='appPageMain'>
           <div id='formBalance'>
             <Form listTransactions={listTransactions} setListTransactions={setListTransactions}/>
-          </div>
-          <aside id='financialResum'>
             {listTransactions.length > 0 && (
               <Balance balance={balance}/>
             )}
+          </div>
+          <aside id='financialResum'>            
             <h4 id='financialResumTitle'>Resumo Finaceiro</h4>
           {listTransactions.length > 0 ? (
             <div>
@@ -30,9 +30,9 @@ export const ApplicationPage =  ( {setHomePage, listTransactions, setListTransac
             ):
             <div id='noTransactions'>
               <h2>Você ainda não possui nenhum lançamento</h2>
-              <img className='fakeCard' src={NoCard} alt="Um Card simbólico sem informações" />
-              <img className='fakeCard' src={NoCard} alt="Um Card simbólico sem informações" />
-              <img className='fakeCard' src={NoCard} alt="Um Card simbólico sem informações" />
+              <img className='fakeCard' src={NoCard} alt='Um Card simbólico sem informações' />
+              <img className='fakeCard' src={NoCard} alt='Um Card simbólico sem informações' />
+              <img className='fakeCard' src={NoCard} alt='Um Card simbólico sem informações' />
             </div>
             }
           </aside>

@@ -8,7 +8,7 @@ const App = () => {
   const [listTransactions, setListTransactions] = useState([])
 
   return (
-    <div className="App">
+    <div className='App'>
       { 
       homePage? 
       <HomePage setHomePage={setHomePage}/>:
